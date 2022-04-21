@@ -1,0 +1,43 @@
+{
+	"name": "orb_slam",
+	"context": "..",
+	"dockerFile": "Dockerfile",
+	// Use 'settings' to set *default* container specific settings.json values on container create. 
+	// You can edit these settings after create using File > Preferences > Settings > Remote.
+	/*"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.linting.pylintPath": "/usr/local/share/pip-global/bin/pylint"
+	},*/
+	"settings": {
+		//"terminal.integrated.shell.linux": "/bin/bash",
+		"terminal.integrated.defaultProfile.linux": "bash"
+	},
+	// Comment out next line to run as root
+	"remoteUser": "vscode",
+	// Add the IDs of extensions you want installed when the container is created in the array below.
+	"extensions": [
+		"ms-python.python",
+		"redhat.vscode-yaml"
+	],
+	"runArgs": [
+		"--privileged=true",
+		"--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+		"--volume=/tmp/.docker.xauth:/tmp/.docker.xauth:rw",
+		"-e=DISPLAY",
+		"--env='XAUTHORITY=/tmp/.docker.xauth'",
+		"--gpus=all",
+		"-v=/database/:/data:rw",
+		"--rm",
+		"--net=host",
+		"--ipc=host",
+		"-v=/dev:/dev"
+	],
+	"initializeCommand": [
+		"./.devcontainer/setup.sh"
+	],
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
+	"workspaceFolder": "/workspace"
+}
