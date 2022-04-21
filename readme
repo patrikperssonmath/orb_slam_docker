@@ -1,3 +1,5 @@
+git submodule update --init --recursive
+
 install docker 
 
 install nividia docker plugin
