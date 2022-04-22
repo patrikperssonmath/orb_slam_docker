@@ -2,9 +2,9 @@
 
 initialize submodules
 
-'''console
+```console
 git submodule update --init --recursive
-'''
+```
 
 install docker:
 
@@ -22,15 +22,15 @@ unpack at /path/to/dataset_folder
 
 build container
 
-'''console
+```console
 ./build_docker.sh
-'''
+```
 
 open container in terminal
 
-'''console
+```console
 ./run_docker.sh /path/to/dataset_folder
-'''
+```
 
 run orbslam example code
 
