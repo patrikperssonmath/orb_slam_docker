@@ -6,17 +6,11 @@ initialize submodules
 git submodule update --init --recursive
 ```
 
-install docker:
+install docker [docker](https://docs.docker.com/engine/install/)
 
-[docker doc](https://docs.docker.com/engine/install/)
+install [nvidia container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 
-install nividia container toolkit
-
-[nvidia toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
-
-download dataset
-
-[EuRoc](http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.zip)
+download [EuRoc dataset](http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.zip)
 
 unpack at /path/to/dataset_folder
 
