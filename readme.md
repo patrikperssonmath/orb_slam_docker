@@ -12,7 +12,7 @@ git submodule update --init --recursive
 
 4. download [EuRoc dataset](http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.zip)
 
-unpack at /path/to/dataset_folder
+   unpack at /path/to/dataset_folder
 
 5. build container
 
