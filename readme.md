@@ -28,6 +28,6 @@ git submodule update --init --recursive
 
 7. run orbslam example code
 
-'''console
+```console
 ./Examples/Monocular-Inertial/mono_inertial_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/EuRoC.yaml /data/MH_01_easy ./Examples/Monocular-Inertial/EuRoC_TimeStamps/MH01.txt
-'''
+```
