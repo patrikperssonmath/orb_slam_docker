@@ -2,7 +2,9 @@
 
 initialize submodules
 
-'git submodule update --init --recursive'
+'''console
+git submodule update --init --recursive
+'''
 
 install docker:
 
@@ -20,16 +22,18 @@ unpack at /path/to/dataset_folder
 
 build container
 
-'
+'''console
 ./build_docker.sh
-'
+'''
 
 open container in terminal
 
-'
+'''console
 ./run_docker.sh /path/to/dataset_folder
-'
+'''
 
 run orbslam example code
 
+'''console
 ./Examples/Monocular-Inertial/mono_inertial_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular-Inertial/EuRoC.yaml /data/MH_01_easy ./Examples/Monocular-Inertial/EuRoC_TimeStamps/MH01.txt
+'''
