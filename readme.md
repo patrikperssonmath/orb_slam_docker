@@ -6,7 +6,7 @@
 git submodule update --init --recursive
 ```
 
-2. install docker [docker](https://docs.docker.com/engine/install/)
+2. install [docker](https://docs.docker.com/engine/install/)
 
 3. install [nvidia container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 
